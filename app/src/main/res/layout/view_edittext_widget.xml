@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+    <EditText
+        android:id="@+id/edt_text"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@color/transparency"
+        android:paddingLeft="10dp"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:gravity="center_vertical"
+        android:textCursorDrawable="@null"
+        android:textColorHint="#BFC1CB"
+        android:textSize="14sp"
+        tools:hint="请输入"
+        android:textColor="#333333"/>
+    <ImageView
+        android:id="@+id/iv_del"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@mipmap/ico_clear"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:id="@+id/iv_see"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ico_hide_pass"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"/>
+</LinearLayout>

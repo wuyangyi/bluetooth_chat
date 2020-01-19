@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zz.bluetooth_chat.widget.NoScrollViewPager
+        android:id="@+id/vp_home"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/driver_height"
+        android:background="@color/driver_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_bottom_height"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/rv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_message"
+                        android:layout_width="@dimen/home_bottom_image"
+                        android:layout_height="@dimen/home_bottom_image"
+                        android:src="@mipmap/ic_launcher"/>
+
+                    <TextView
+                        android:id="@+id/tv_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/home_text_size"
+                        android:textColor="@color/home_bottom_text_normal"
+                        android:text="消息"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/v_message_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/red_circle_size"
+                    android:minWidth="@dimen/red_circle_size"
+                    android:background="@drawable/shape_message_bg"
+                    android:layout_marginLeft="@dimen/home_bottom_image"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:paddingLeft="3.5dp"
+                    android:paddingRight="3.5dp"
+                    android:textAlignment="center"
+                    tools:text="9"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_group"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_group"
+                android:layout_width="@dimen/home_bottom_image"
+                android:layout_height="@dimen/home_bottom_image"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/tv_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/home_text_size"
+                android:textColor="@color/home_bottom_text_normal"
+                android:text="附近"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/iv_mine"
+                android:layout_width="@dimen/home_bottom_image"
+                android:layout_height="@dimen/home_bottom_image"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/tv_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/home_text_size"
+                android:textColor="@color/home_bottom_text_normal"
+                android:text="我的"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

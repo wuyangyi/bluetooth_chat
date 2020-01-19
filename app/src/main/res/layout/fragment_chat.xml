@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/behavior_demo_coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+    <com.zz.bluetooth_chat.widget.OnDownRecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:background="@color/driver_color"/>
+    <LinearLayout
+        android:id="@+id/ll_helper_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="12.5dp"
+        android:paddingBottom="12.5dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:gravity="bottom"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/ivDown"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/ico_speck"/>
+        <com.zz.bluetooth_chat.widget.chat.SpeckButton
+            android:id="@+id/tvDownSpeck"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingTop="7.5dp"
+            android:paddingBottom="7.5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_marginRight="14.5dp"
+            android:gravity="center"
+            android:textColor="@color/title_color"
+            android:textSize="14sp"
+            android:text="按住 说话"
+            android:background="@drawable/bg_speck_no_down"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/et_import"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_search_radus"
+            android:maxLines="5"
+            android:layout_marginRight="14.5dp"
+            android:paddingTop="7.5dp"
+            android:paddingBottom="7.5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/title_color"
+            android:textColorHint="#C9C9C9"
+            android:textSize="14sp"
+            tools:hint="消息" />
+
+        <ImageView
+            android:id="@+id/iv_emil"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="4.5dp"
+            android:src="@mipmap/ico_chat_face"/>
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="4.5dp"
+            android:src="@mipmap/ico_helper_more"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/bt_send"
+                android:layout_width="61dp"
+                android:layout_height="26dp"
+                android:background="@drawable/bg_send"
+                android:enabled="true"
+                android:gravity="center"
+                android:layout_marginBottom="4.7dp"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_menu_top_line"
+        android:paddingTop="1dp"
+        android:gravity="center">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+
+</LinearLayout>

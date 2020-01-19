@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="transparency">#00000000</color>
+    <!--分割线的颜色-->
+    <color name="driver_color">#F6F7F8</color>
+    <!--首页底部按钮-未选择文字颜色-->
+    <color name="home_bottom_text_normal">#8C95A5</color>
+    <!--首页底部按钮-选择文字颜色-->
+    <color name="home_bottom">#777EFF</color>
+
+    <color name="main_color">#7C4DFF</color>
+
+    <!--标题文字颜色 -->
+    <color name="title_color">#363951</color>
+    <!--没有更多数据的文字颜色-->
+    <color name="footer_no_more_data">#b3b3b3</color>
+
+    <color name="tint_color">#89919B</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!--底部list选择下划线颜色-->
+    <color name="select_driver_color">#EFF1F5</color>
+    <!--选中颜色-->
+    <color name="select_color">#3388FF</color>
+</resources>

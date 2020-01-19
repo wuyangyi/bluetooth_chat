@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/driver_color">
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center">
+        <com.zz.bluetooth_chat.widget.imageview.MLImageView
+            android:id="@+id/iv_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:ml_shape_type="round"
+            android:src="@mipmap/pic_default_secret"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="@integer/name_length"
+                android:maxLines="1"
+                android:drawablePadding="10dp"
+                android:textSize="@dimen/content_text_size"
+                android:textColor="@color/title_color"
+                android:text="张三丰"/>
+
+            <TextView
+                android:id="@+id/tv_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/tint_color"
+                android:text="设备名称"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:drawableRight="@mipmap/icon_profile_small_arrow"
+            android:drawablePadding="1dp"
+            android:background="@drawable/bg_text_profile_personal"
+            android:textColor="#99A4BA"
+            android:textSize="11dp"
+            android:text="我的动态"/>
+    </LinearLayout>
+    <com.zz.bluetooth_chat.widget.MyItemButton
+        android:id="@+id/ib_my_manager"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/device_bg"
+        android:layout_marginTop="10dp"
+        app:leftImage="@mipmap/ic_my"
+        app:rightImage="@mipmap/ic_go_to"
+        app:leftText="个人中心" />
+
+    <com.zz.bluetooth_chat.widget.MyItemButton
+        android:id="@+id/ib_circle_manager"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/device_bg"
+        app:leftImage="@mipmap/ic_circle"
+        app:rightImage="@mipmap/ic_go_to"
+        app:leftText="动态管理" />
+
+    <com.zz.bluetooth_chat.widget.MyItemButton
+        android:id="@+id/ib_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/device_bg"
+        app:leftImage="@mipmap/ico_mine_setting"
+        app:rightImage="@mipmap/ic_go_to"
+        app:leftText="设置" />
+
+
+
+
+</LinearLayout>

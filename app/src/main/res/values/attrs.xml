@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义圆角（可加边框）ImageView-->
+    <declare-styleable name="MLImageView">
+        <attr name="ml_border_color" format="color" />
+        <attr name="ml_border_width" format="dimension" />
+        <attr name="ml_radius" format="dimension" />
+        <attr name="ml_shape_type" format="enum">
+            <enum name="none" value="0" />
+            <enum name="round" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!--自定义button-->
+    <declare-styleable name="MyItemButton">
+        <!--左图-->
+        <attr name="leftImage" format="reference"/>
+        <!--右图-->
+        <attr name="rightImage" format="reference"/>
+        <!--左边文字-->
+        <attr name="leftText" format="reference|string"/>
+        <!--右边文字-->
+        <attr name="rightText" format="reference|string"/>
+        <!--右边hint-->
+        <attr name="rightHintText" format="reference|string"/>
+        <!--左边文字颜色-->
+        <attr name="leftTextColor" format="color|reference"/>
+        <!--右边文字颜色-->
+        <attr name="rightTextColor" format="color|reference"/>
+        <!--右边hint颜色-->
+        <attr name="rightHintColor" format="color|reference"/>
+        <!--是否显示分割线-->
+        <attr name="showLine" format="reference|boolean"/>
+    </declare-styleable>
+
+    <!--密码或者文本输入框，带清除和密码可见按钮-->
+    <declare-styleable name="EditTextDelOrSee">
+        <!--editText hint文字-->
+        <attr name="edtHintText" format="reference|string"/>
+        <!--输入的类型-->
+        <attr name="inputType" format="enum">
+            <enum name="text" value="0"/>
+            <enum name="phone" value="1"/>
+            <enum name="number" value="2"/>
+            <enum name="password" value="3"/>
+        </attr>
+        <!--edittext最多输入长度-->
+        <attr name="maxLength" format="integer|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaxHeightRecyclerView">
+        <attr name="maxHeight" format="dimension"/>
+    </declare-styleable>
+</resources>

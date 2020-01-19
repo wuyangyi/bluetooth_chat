@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp">
+    <ImageView
+        android:id="@+id/iv_bt_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        tools:src="@mipmap/ic_go_back"/>
+    <TextView
+        android:id="@+id/tv_bt_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/title_color"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_bt_left"
+        android:textSize="@dimen/content_text_size" />
+    <ImageView
+        android:id="@+id/iv_bt_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_go_to"/>
+    <TextView
+        android:id="@+id/tv_bt_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6C7582"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_bt_right"
+        android:textColorHint="#CBCDD5"
+        android:textSize="@dimen/text_no_more_data_size" />
+    <View
+        android:id="@+id/v_buttom_driver"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/driver_height"
+        android:background="@color/driver_color"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="51.5dp"
+    android:paddingLeft="37.5dp"
+    android:paddingRight="37.5dp"
+    android:background="@drawable/select_item_bg"
+    android:id="@+id/rv_parent">
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ico_no_select"/>
+    <TextView
+        android:id="@+id/tv_edu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_select"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/title_color"
+        android:textSize="15sp"
+        android:text=""/>
+    <View
+        android:id="@+id/v_driver"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/select_driver_color"/>
+</RelativeLayout>
